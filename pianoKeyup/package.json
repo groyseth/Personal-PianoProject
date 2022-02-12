@@ -1,0 +1,12 @@
+{
+  "name": "pianokeyup",
+  "version": "1.0.0",
+  "description": "I want to make a project that uses keypresses to make piano sounds!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
