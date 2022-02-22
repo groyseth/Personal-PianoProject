@@ -7,7 +7,7 @@ var litterArr = [];
     // const element = array[i];
     // console.log(litterArr[i]);
     var soundFunction = litterArr[i];
-    // console.log(soundFunction);
+    console.log(soundFunction);
   }
   // let Key = new Audio('./assets/audio/ckey.mp3');
   // soundFunction.addEventListener("canplaythrough", event => {
@@ -246,3 +246,5 @@ console.log(arr);
 //more functions with the file names
 //main keys are hard coded and using a switch method
 //and having like alot more of the myAudioElement fucntions
+
+//loop over every key 

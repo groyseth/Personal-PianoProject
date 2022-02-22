@@ -14,3 +14,6 @@ I can console log the sound fucntions, just need a way to play them
 
     Starting to make handlebars and a server
 login, sign up, withauth
+
+
+    Make server look like a mongoose server
