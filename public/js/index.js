@@ -1,40 +1,43 @@
 var litterArr = [];
 
- function usingSound() {
-  // console.log(litterArr);
-
+async function usingSound(key) {
+   let testKey = key;
+  console.log(key);
+  // var litterArr = [];
+   litterArr.push(testKey)
+  console.log(litterArr);
   for (let i = 0; i < litterArr.length; i++) {
     // const element = array[i];
     // console.log(litterArr[i]);
     var soundFunction = litterArr[i];
     console.log(soundFunction);
   }
-  // let Key = new Audio('./assets/audio/ckey.mp3');
-  // soundFunction.addEventListener("canplaythrough", event => {
+//   let Key = new Audio('./assets/audio/ckey.mp3');
+//   soundFunction.addEventListener("canplaythrough", event => {
 // Audio.play(soundFunction)
     
-  //    function playing(){
-  //   Audio.apply(soundFunction)
+//      function playing(){
+//     Audio.apply(soundFunction)
 
-  // }
+  }
   
   // var playButton = document.getElementById("playBack").addEventListener("submit", playing)
-}
+
 
 function testFunction(key) {
-  console.log(key.key);
+  // console.log(key.key);
   if (key.key) {
     switch (key.key) {
       case "a":
         console.log("keypresseda");
         aLiteralKey()
-        litterArr.push(aLiteralKey)
+        // litterArr.push(aLiteralKey)
         recorded("a");
         break;
       case "s":
         console.log("keypresseds");
         sLiteralKey();
-        litterArr.push(sLiteralKey)
+        // litterArr.push(sLiteralKey)
         recorded("s")
         break;
       case "d":
@@ -108,8 +111,8 @@ function testFunction(key) {
 
     }
   }
-  // console.log(litterArr);
-  usingSound();
+  // console.log((switch));
+  usingSound(key.key);
   // var playButton = document.getElementById("playBack").addEventListener("submit", usingSound)
   // console.log(playButton);
 }
@@ -117,7 +120,7 @@ function testFunction(key) {
 
 // }
 //use switch
-// var playButton = document.getElementById("playBack").addEventListener("submit", usingSound)
+// var playButton = document.getElementById("text_box").addEventListener("submit", usingSound)
 // console.log(playButton);
 
 var keys = document.getElementById("text_box").addEventListener("keypress", testFunction);
@@ -237,7 +240,7 @@ function recorded(letter){
  arr.push(letter)
 
 
-console.log(arr);
+// console.log(arr);
 }
 
 

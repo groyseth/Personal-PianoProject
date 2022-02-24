@@ -17,3 +17,8 @@ login, sign up, withauth
 
 
     Make server look like a mongoose server
+
+
+    well just use bootsrap and ask tooter about using the loop with the audio lol?? sadface.
+
+    tomorrow use the data with sessions
