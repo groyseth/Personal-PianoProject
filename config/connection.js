@@ -1,6 +1,6 @@
 const { connect, connection } = require('mongoose');
 
-connect('mongodb://localhost/pianoPage', {
+connect(process.env.MONGODB_URI||'mongodb://localhost/pianoPage', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
