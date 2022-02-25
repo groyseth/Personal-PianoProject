@@ -2,9 +2,8 @@
 
 const router = require('express').Router();
 const {
-  getBoard,
-  signUp,
-  logIn
+  getBoard
+  
   
 } = require('../controllers/homeController');
 
