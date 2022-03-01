@@ -1,32 +1,21 @@
 var litterArr = [];
 
-async function usingSound(key) {
-   let testKey = key;
-  console.log(key);
-  // var litterArr = [];
-   litterArr.push(testKey)
-  console.log(litterArr);
-  for (let i = 0; i < litterArr.length; i++) {
-    // const element = array[i];
-    // console.log(litterArr[i]);
-    var soundFunction = litterArr[i];
-    console.log(soundFunction);
-  }
-//   let Key = new Audio('./assets/audio/ckey.mp3');
-//   soundFunction.addEventListener("canplaythrough", event => {
-// Audio.play(soundFunction)
-    
-//      function playing(){
-//     Audio.apply(soundFunction)
 
-  }
+
+   
+// console.log(playButton);
+
+
   
-  // var playButton = document.getElementById("playBack").addEventListener("submit", playing)
 
-
+  
+var randomArr = [];
 function testFunction(key) {
   // console.log(key.key);
+  
   if (key.key) {
+   randomArr.push(key.key)
+    console.log(randomArr);
     switch (key.key) {
       case "a":
         console.log("keypresseda");
@@ -74,10 +63,11 @@ function testFunction(key) {
         console.log("keypressedSpace");
         recorded(" ")
         break;
-      // case ";":
-      //   console.log("keypressed;");
-      //   recorded(";")
-      //   break;
+      case ";":
+        console.log("keypressed;");
+        recorded(";")
+        
+        break;
       case "w":
         console.log("keypressedw");
         wLiteralKey();
@@ -111,17 +101,120 @@ function testFunction(key) {
 
     }
   }
-  // console.log((switch));
-  usingSound(key.key);
-  // var playButton = document.getElementById("playBack").addEventListener("submit", usingSound)
-  // console.log(playButton);
+  // usingSound(key.key);
+  //  usingSound(key.key);
+
 }
 
+function  usingSound() {
 
-// }
-//use switch
-// var playButton = document.getElementById("text_box").addEventListener("submit", usingSound)
-// console.log(playButton);
+  console.log(randomArr);
+  var i = 0
+  var player = setInterval(() => {
+   var test = randomArr[i]
+    console.log(test);
+   i++
+   if(i === randomArr.length){
+     clearInterval(player)
+   }
+   switch (test) {
+   case "a":
+     console.log("keypresseda");
+     aLiteralKey()
+     // litterArr.push(aLiteralKey)
+    //  recorded("a");
+     console.log("apushed");
+     break;
+   case "s":
+     console.log("keypresseds");
+     sLiteralKey();
+     // litterArr.push(sLiteralKey)
+     recorded("s")
+     break;
+   case "d":
+     console.log("keypressedd");
+     dLiteralKey();
+     recorded("d");
+     break;
+   case "f":
+     console.log("keypressedf");
+     fLiteralKey();
+     recorded("f")
+     break;
+   case "g":
+     console.log("keypressedg");
+     gLiteralKey();
+     recorded("g")
+     break;
+   case "h":
+     console.log("keypressedh");
+     hLiteralKey();
+     recorded("h")
+     break;
+   case "j":
+     console.log("keypressedj");
+     jLiteralKey();
+     recorded("j")
+     break;
+   case "k":
+     console.log("keypressedk");
+     kLiteralKey();
+     recorded("k")
+     break;
+   case " ":
+     console.log("keypressedSpace");
+     recorded(" ")
+     break;
+   // case ";":
+   //   console.log("keypressed;");
+   //   recorded(";")
+   //   break;
+   case "w":
+     console.log("keypressedw");
+     wLiteralKey();
+     recorded("w")
+     break;
+   case "e":
+     console.log("keypressedw");
+     eLiteralKey();
+     recorded("e")
+     break;
+   case "t":
+     console.log("keypressedw");
+     tLiteralKey();
+     recorded("t")
+     break;
+   case "y":
+     console.log("keypressedw");
+     yLiteralKey();
+     recorded("y")
+     break;
+   case "u":
+     console.log("keypressedw");
+     uLiteralKey();
+     recorded("u")
+     break;
+     case "o":
+     console.log("keypressedw");
+     oLiteralKey();
+     recorded("o")
+     break;
+ 
+ }
+  }, 900);
+   
+  // randomArr.forEach(element => {
+  //   console.log(element);
+  //   var  test = element
+
+
+  // });
+  console.log("playback");
+    
+  }
+
+
+// console.log(randomArr);
 
 var keys = document.getElementById("text_box").addEventListener("keypress", testFunction);
 
@@ -249,5 +342,6 @@ function recorded(letter){
 //more functions with the file names
 //main keys are hard coded and using a switch method
 //and having like alot more of the myAudioElement fucntions
+var playButton = document.getElementById("playBack").addEventListener("click", usingSound)
 
 //loop over every key 
