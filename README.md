@@ -8,6 +8,8 @@ work in progress but you can use your home row to play a piano!
 # Using
 mongoose and express
 
+# Updates
+working playback button
 
 # Future Content
 login, save you song and post your song.
