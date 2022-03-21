@@ -1,13 +1,6 @@
 var litterArr = [];
 
 
-
-   
-// console.log(playButton);
-
-
-  
-
   
 var randomArr = [];
 function testFunction(key) {
@@ -101,8 +94,6 @@ function testFunction(key) {
 
     }
   }
-  // usingSound(key.key);
-  //  usingSound(key.key);
 
 }
 
@@ -201,14 +192,8 @@ function  usingSound() {
      break;
  
  }
-  }, 900);
+  }, 120);
    
-  // randomArr.forEach(element => {
-  //   console.log(element);
-  //   var  test = element
-
-
-  // });
   console.log("playback");
     
   }

@@ -16,3 +16,5 @@ save the time between keypress with the notes played arry of objects [{note:"a",
 in the time intervole instead of hard coding set it to the arry[i].time
 
 show the corisponding piano note
+
+switch to react. will be easier to create routes!!
