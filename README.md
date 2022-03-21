@@ -8,6 +8,8 @@ work in progress but you can use your home row to play a piano!
 # Using
 mongoose and express
 
+# Updates
+working playback button
 
 # Future Content
 login, save you song and post your song.
@@ -17,4 +19,3 @@ in the time intervole instead of hard coding set it to the arry[i].time
 
 show the corisponding piano note
 
-switch to react. will be easier to create routes!!
