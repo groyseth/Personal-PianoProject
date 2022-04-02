@@ -1,16 +1,21 @@
 <div class="text-box">
 <input type="text" id="text_box">
-<button type="click" id="playBack">replay</button>
+
 </div>
 {{!-- <button onclick="usingSound">button</button> --}}
 
-<div class="piano-box">
-    <div class="key" id="aLiteral"></div>
-    <div class="key" id="sLiteral"></div>
-    <div class="key" id="dLiteral"></div>
-    <div class="key" id="fLiteral"></div>
-    <div class="key" id="gLiteral"></div>
-    <div class="key" id="hLiteral"></div>
-    <div class="key" id="jLiteral"></div>
+<div class="piano-box row" id="click_box" onclick="clickBox()">
+    <button class="key" id="a" ></button>
+    <button class="key" id="s" ></button>
+    <button class="key" id="d"></button>
+    <button class="key" id="f"></button>
+    <button class="key" id="g"></button>
+    <button class="key" id="h"></button>
+    <button class="key" id="j"></button>
+    <button class="key" id="k"></button>
+    {{!-- <button class="key" id="l"></button> --}}
+</div>
+<div class="buttonMove">
+<button type="click" id="playBack">replay</button>
 </div>
     <script src="./js/sounds.js"></script>

@@ -4,12 +4,12 @@ var litterArr = [];
   
 var randomArr = [];
 function testFunction(key) {
-  // console.log(key.key);
+  console.log(key, "testFucntion");
   
-  if (key.key) {
-   randomArr.push(key.key)
+  if (key.key || key) {
+   randomArr.push(key.key || key)
     console.log(randomArr);
-    switch (key.key) {
+    switch (key.key || key) {
       case "a":
         console.log("keypresseda");
         aLiteralKey()
@@ -103,7 +103,7 @@ function  usingSound() {
   var i = 0
   var player = setInterval(() => {
    var test = randomArr[i]
-    console.log(test);
+    // console.log(test);
    i++
    if(i === randomArr.length){
      clearInterval(player)
@@ -192,7 +192,7 @@ function  usingSound() {
      break;
  
  }
-  }, 120);
+  }, 180);
    
   console.log("playback");
     
@@ -328,5 +328,18 @@ function recorded(letter){
 //main keys are hard coded and using a switch method
 //and having like alot more of the myAudioElement fucntions
 var playButton = document.getElementById("playBack").addEventListener("click", usingSound)
+
+// var testButton = document.getElementById("testButton").addEventListener("click", oLiteralKey)
+
+ function  clickBox (){
+var testButton = document.getElementById("click_box").addEventListener("click", buttonClick);
+
+}
+function buttonClick(e){
+var clickKey = e.target.id;
+console.log(clickKey);
+testFunction(clickKey);
+}
+
 
 //loop over every key 
