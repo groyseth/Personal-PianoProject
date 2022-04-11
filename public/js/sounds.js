@@ -113,13 +113,13 @@ function  usingSound() {
      console.log("keypresseda");
      aLiteralKey()
      // litterArr.push(aLiteralKey)
-    //  recorded("a");
+   
      console.log("apushed");
      break;
    case "s":
      console.log("keypresseds");
      sLiteralKey();
-     // litterArr.push(sLiteralKey)
+    
      recorded("s")
      break;
    case "d":
@@ -156,10 +156,6 @@ function  usingSound() {
      console.log("keypressedSpace");
      recorded(" ")
      break;
-   // case ";":
-   //   console.log("keypressed;");
-   //   recorded(";")
-   //   break;
    case "w":
      console.log("keypressedw");
      wLiteralKey();
@@ -328,13 +324,17 @@ function recorded(letter){
 //main keys are hard coded and using a switch method
 //and having like alot more of the myAudioElement fucntions
 var playButton = document.getElementById("playBack").addEventListener("click", usingSound)
-
+var clear = document.getElementById("clear").addEventListener("click", clearFunction)
 // var testButton = document.getElementById("testButton").addEventListener("click", oLiteralKey)
 
  function  clickBox (){
 var testButton = document.getElementById("click_box").addEventListener("click", buttonClick);
 
 }
+function clearFunction(){
+  randomArr = [];
+}
+
 function buttonClick(e){
 var clickKey = e.target.id;
 console.log(clickKey);
